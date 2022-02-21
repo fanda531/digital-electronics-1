@@ -1,6 +1,6 @@
-# Lab 1: YOUR_FIRSTNAME LASTNAME
+# Lab 1: FRANTISEK BILEK
 
-### De Morgan's lawsppppppppppppppppppppppppp
+### De Morgan's laws
 
 1. Equations of all three versions of logic function f(c,b,a):
 
