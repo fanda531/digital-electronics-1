@@ -28,9 +28,20 @@
         -- Report a note at the beginning of stimulus process
         report "Stimulus process started" severity note;
 
-        -- First test case
-        s_b <= "0011";		-- student ID = xxxx34 (second last digit (BCD) -> 0011)
-        s_a <= "0100";		-- student ID = xxxx34 (last digit (BCD) -> 0100)
+        -- First test case (OK)
+        s_b <= "0011";		-- student ID = xxxx34
+        s_a <= "0100";		-- student ID = xxxx34
+        wait for 100 ns;
+        -- Expected output
+        assert ((s_B_greater_A = '0') and
+                (s_B_equals_A  = '0') and
+                (s_B_less_A    = '1'))
+        -- If false, then report an error
+        report "Input combination 0011, 0100 FAILED" severity error;
+        
+        -- Second test case (ERROR)
+ 		s_b <= "1000";		-- spatne
+        s_a <= "0100";
         wait for 100 ns;
         -- Expected output
         assert ((s_B_greater_A = '0') and
@@ -47,7 +58,7 @@
 
 2. Text console screenshot during your simulation, including reports.
 
-   ![your figure]()
+   ![console](kmap_empty.png)
 
 3. Link to your public EDA Playground example:
 
