@@ -29,7 +29,7 @@
         report "Stimulus process started" severity note;
 
         -- First test case
- 		s_b <= "0011";		-- student ID = xxxx34 (second last digit (BCD) -> 0011)
+        s_b <= "0011";		-- student ID = xxxx34 (second last digit (BCD) -> 0011)
         s_a <= "0100";		-- student ID = xxxx34 (last digit (BCD) -> 0100)
         wait for 100 ns;
         -- Expected output
