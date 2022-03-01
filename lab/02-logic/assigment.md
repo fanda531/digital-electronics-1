@@ -39,8 +39,8 @@
         -- If false, then report an error
         report "Input combination 0011, 0100 FAILED" severity error;
         
-        -- Second test case (ERROR)
-        s_b <= "1000";		-- spatne
+        -- Second test case (intentional error)
+        s_b <= "1000";		-- wrong
         s_a <= "0100";
         wait for 100 ns;
         -- Expected output
