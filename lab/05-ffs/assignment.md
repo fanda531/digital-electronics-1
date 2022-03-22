@@ -22,7 +22,11 @@ begin
     begin
         if rising_edge(clk) then
 
-        -- WRITE YOUR CODE HERE
+        if (rst = '1' ) then
+                s_q     <= '0';
+            else
+                s_q <= t xor s_q;
+            end if;
 
         end if;
     end process p_t_ff_rst;
