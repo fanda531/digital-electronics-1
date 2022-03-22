@@ -26,7 +26,7 @@ begin
                 s_q     <= '0';
             else
                 s_q <= t xor s_q;
-            end if;
+        end if;
 
         end if;
     end process p_t_ff_rst;
