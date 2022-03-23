@@ -28,6 +28,7 @@
                 end if;
                 
             end if;
+            
         end if;
     end process p_cnt_up_down;
 ```
