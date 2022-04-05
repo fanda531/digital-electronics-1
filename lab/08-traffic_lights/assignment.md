@@ -1,4 +1,4 @@
-# Lab 8: YOUR_FIRSTNAME LASTNAME
+# Lab 8: FRANTISEK BILEK
 
 ### Traffic light controller
 
