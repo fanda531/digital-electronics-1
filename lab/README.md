@@ -23,6 +23,12 @@ Mechanical pushbutton often generate fake transitions when pressed due to its me
 ### `clock_setter.vhd`
 text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
 
+### `cnt_up_down_2.vhd`
+text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+
+### `hex_7seg.vhd`
+text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+
 ### `driver_7seg_4digits.vhd`
 text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
 
@@ -32,11 +38,5 @@ text text text text text text text text text text text text text text text text 
 ### `clock_enable.vhd`
 text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
 
-### `cnt_up_down_2.vhd`
-text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
-
 ### `driver_dig_clock.vhd`
-text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
-
-### `hex_7seg.vhd`
 text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
