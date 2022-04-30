@@ -1,7 +1,7 @@
 ## VHDL modules description and simulations
 
 ### `dig_clock`
-This module ensures the functionality of the clock as such. It outputs current time...
+This module ensures the functionality of the clock as such. It takes clock signal which is slow down to 1 second using the clock_enable module. Every second the second value increases by one, but to 59 and then back to zero. In the same way, the minute value also increases after the second value reaches 59, but up to 59. The hourly value increases when the minute value reaches 59 and rises to 23 and resets again to zero.
 
  | **Port name** | **Direction** | **Type** | **Description** |
  | :-: | :-: | :-- | :-- |
