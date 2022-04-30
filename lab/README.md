@@ -3,7 +3,7 @@
 ### `dig_clock`
 This module ensures the functionality of the clock as such. It outputs current time...
 
-| **Port name** | **Direction** | **Type** | **Description** |
+      | **Port name** | **Direction** | **Type** | **Description** |
       | :-: | :-: | :-- | :-- |
       | `btn_set` | in | `std_logic` | ... |
       | `set_second` | in  | `std_logic_vector(5 downto 0)` | ... |
