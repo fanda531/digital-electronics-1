@@ -2,15 +2,16 @@
 
 ### `dig_clock`
 This module ensures the functionality of the clock as such. It outputs current time...
-      | **Port name** | **Direction** | **Type** | **Description** |
-      | :-: | :-: | :-- | :-- |
-      | `btn_set` | in | `std_logic` | ... |
-      | `set_second` | in  | `std_logic_vector(5 downto 0)` | ... |
-      | `set_minute` | in | `std_logic_vector(5 downto 0)` | ... |
-      | `set_hour` | in | `std_logic_vector(4 downto 0)` | ... |
-      | `sec_o` | out | `std_logic_vector(5 downto 0)` | ... |
-      | `min_o` | out | `std_logic_vector(5 downto 0)` | ... |
-      | `hr_o` | out | `std_logic_vector(4 downto 0)` | ... |
+
+ | **Port name** | **Direction** | **Type** | **Description** |
+ | :-: | :-: | :-- | :-- |
+ | `btn_set` | in | `std_logic` | ... |
+ | `set_second` | in  | `std_logic_vector(5 downto 0)` | ... |
+ | `set_minute` | in | `std_logic_vector(5 downto 0)` | ... |
+ | `set_hour` | in | `std_logic_vector(4 downto 0)` | ... |
+ | `sec_o` | out | `std_logic_vector(5 downto 0)` | ... |
+ | `min_o` | out | `std_logic_vector(5 downto 0)` | ... |
+ | `hr_o` | out | `std_logic_vector(4 downto 0)` | ... |
 
 ### `time_comp_alarm`
 This module works both to remember the set alarm time and to trigger the alarm at the correct time.
