@@ -1,7 +1,6 @@
 ## VHDL modules description and simulations
 
 ### `dig_clock`
-This module ensures the functionality of the clock as such. It takes clock signal which is slow down to 1 second using the clock_enable module. Every second the second value increases by one, but to 59 and then back to zero. In the same way, the minute value also increases after the second value reaches 59, but up to 59. The hourly value increases when the minute value reaches 59 and rises to 23 and resets again to zero.
 
  | **Port name** | **Direction** | **Type** | **Description** |
  | :-: | :-: | :-- | :-- |
@@ -12,6 +11,8 @@ This module ensures the functionality of the clock as such. It takes clock signa
  | `sec_o` | out | `std_logic_vector(5 downto 0)` | ... |
  | `min_o` | out | `std_logic_vector(5 downto 0)` | ... |
  | `hr_o` | out | `std_logic_vector(4 downto 0)` | ... |
+ 
+This module ensures the functionality of the clock as such. It takes clock signal which is slow down to 1 second using the clock_enable module. Every second the second value increases by one, but to 59 and then back to zero. In the same way, the minute value also increases after the second value reaches 59, but up to 59. The hourly value increases when the minute value reaches 59 and rises to 23 and resets again to zero.
 
 ### `time_comp_alarm`
 This module works both to remember the set alarm time and to trigger the alarm at the correct time.
