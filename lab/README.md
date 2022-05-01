@@ -7,12 +7,12 @@ By default, the time runs from 00:00:00. If we press the button, the module read
 
 ### `time_comp_alarm.vhd`
 This module works both to remember the set alarm time and to trigger the alarm at the correct time.
-- `set_minute`: Set value of minutes from `clock_setter.vhd` module to set the alarm. |
-- `set_hour`: Set value of hours from `clock_setter.vhd` module to set the alarm. |
-- `current_minute`: Current minutes value from `dig_clock.vhd` module. |
-- `current_hour`: Current hours value from `dig_clock.vhd` module. |
-- `button_set`: By pressing we save alarm-time values to memory. |
-- `activate_sw_i`: The alarm function is active only when this switch is in the active position |
+- `set_minute`: Set value of minutes from `clock_setter.vhd` module to set the alarm.
+- `set_hour`: Set value of hours from `clock_setter.vhd` module to set the alarm.
+- `current_minute`: Current minutes value from `dig_clock.vhd` module.
+- `current_hour`: Current hours value from `dig_clock.vhd` module.
+- `button_set`: By pressing we save alarm-time values to memory.
+- `activate_sw_i`: The alarm function is active only when this switch is in the active position.
 - `ring`:
 
 ### `button_debouncer.vhd`
