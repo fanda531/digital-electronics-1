@@ -33,7 +33,7 @@ Predesigned 7-segment display decoder from lab exercises.
 text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
 
 ### `to_bcd_conv.vhd`
-Two digits are required to display the time data. The outputs of the `dig_clock` module are 6-bit vectors (in the case of minutes and seconds) and a 5-bit vector in the case of hours. This block is used to divide these vectors into 4-bit, which then can be feed into the 7-segment driver.
+The outputs of the `dig_clock` module are 6-bit vectors (in the case of minutes and seconds) and a 5-bit vector in the case of hours. This block is used to divide these vectors into 4-bit, which then can be feed into the 7-segment driver. Each 4-bit vector represents one decimal digit.
 
 ### `clock_enable.vhd`
 text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
