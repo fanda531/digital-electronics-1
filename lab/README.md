@@ -20,8 +20,8 @@ Predesigned bidirectional counter from lab exercises.
 ### `hex_7seg.vhd`
 Predesigned 7-segment display decoder from lab exercises.
 
-### `driver_7seg_4digits.vhd`
-This module is used to control multiple 7-segment displays (6 in our case). Using the multiplexer, we only select one display at a time.
+### `driver_7seg_6digits.vhd`
+Predesigned display driver from lab exercises. This module is used to control multiple 7-segment displays (6 in our case). Using the multiplexer, we only select one display at a time.
 
 ### `to_bcd_conv.vhd`
 The outputs of the `dig_clock.vhd` module are 6-bit vectors in case of minutes and seconds and a 5-bit vector in case of hours. This block is used to divide these vectors into 4-bit BCD value, which then can be feed into the 7-segment driver. Each 4-bit vector represents one decimal digit.
