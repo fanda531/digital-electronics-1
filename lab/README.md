@@ -27,7 +27,7 @@ This module is used to control multiple 7-segment displays (6 in our case). Usin
 The outputs of the `dig_clock.vhd` module are 6-bit vectors in case of minutes and seconds and a 5-bit vector in case of hours. This block is used to divide these vectors into 4-bit BCD value, which then can be feed into the 7-segment driver. Each 4-bit vector represents one decimal digit.
 
 ### `clock_enable.vhd`
-text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+Predesigned clock enable signal generator from lab exercises.
 
 ### `driver_dig_clock.vhd`
 This block is used to encapsulate the `dig_clock.vhd`, `clock_setter.vhd` and `time_comp_alarm.vhd` modules. In addition, it contains a multiplexer, which switches between the current time display and the time setting, depending on the selected mode.
