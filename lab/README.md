@@ -1,4 +1,4 @@
-## VHDL modules description and simulations
+## VHDL modules description
 
 ### `dig_clock.vhd`
 This module ensures the functionality of the clock as such. It takes clock signal which is slow down to 1 second using the clock_enable module. Every second the second value increases by one, but to 59 and then back to zero. In the same way, the minute value also increases after the second value reaches 59, but up to 59. The hourly value increases when the minute value reaches 59 and rises to 23 and resets again to zero.
@@ -21,8 +21,8 @@ Mechanical pushbutton often generate fake transitions when pressed due to its me
 ### `clock_setter.vhd`
 Using this module, we set the time and choose whether it is the current time that we want to set or the time in which the alarm should be triggered. Apart from standard clock signal and enable signal, there are 2 buttons as inputs (using which we set the hours and minutes) and one switch with which we activate the module. The outputs of this block are the values of the hours and minutes we set.
 
-### `cnt_up_down_2.vhd`
-text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+#### `cnt_up_down_2.vhd`
+Predesigned bidirectional counter from lab exercises.
 
 ### `hex_7seg.vhd`
 Predesigned 7-segment display decoder from lab exercises.
@@ -38,3 +38,6 @@ text text text text text text text text text text text text text text text text 
 
 ### `driver_dig_clock.vhd`
 This block is used to encapsulate the `dig_clock.vhd`, `clock_setter.vhd` and `time_comp_alarm.vhd` modules. In addition, it contains a multiplexer, which switches between the current time display and the time setting, depending on the selected mode.
+
+
+## Testbenches and simulations
