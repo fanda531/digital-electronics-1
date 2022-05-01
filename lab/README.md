@@ -30,7 +30,7 @@ text text text text text text text text text text text text text text text text 
 Predesigned 7-segment display decoder from lab exercises.
 
 ### `driver_7seg_4digits.vhd`
-text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+This module is used to control multiple 7-segment displays (6 in our case). Using the multiplexer, we only select one display at a time.
 
 ### `to_bcd_conv.vhd`
 The outputs of the `dig_clock` module are 6-bit vectors (in the case of minutes and seconds) and a 5-bit vector in the case of hours. This block is used to divide these vectors into 4-bit, which then can be feed into the 7-segment driver. Each 4-bit vector represents one decimal digit.
