@@ -6,14 +6,7 @@ This module ensures the functionality of the clock as such. It takes clock signa
 By default, the time runs from 00:00:00. If we press the button, the module reads the hours and minutes values from the `clock_setter.vhd` module and counts the time from them.
 
 ### `time_comp_alarm.vhd`
-This module works both to remember the set alarm time and to trigger the alarm at the correct time.
-- `set_minute`: Set value of minutes from `clock_setter.vhd` module to set the alarm.
-- `set_hour`: Set value of hours from `clock_setter.vhd` module to set the alarm.
-- `current_minute`: Current minutes value from `dig_clock.vhd` module.
-- `current_hour`: Current hours value from `dig_clock.vhd` module.
-- `button_set`: By pressing we save alarm-time values to memory.
-- `activate_sw_i`: The alarm function is active only when this switch is in the active position.
-- `ring`:
+This module works both to remember the set alarm time from `clock_setter.vhd` module and to trigger the alarm at the correct time. By activating `button_set` we save alarm-time values to memory. The alarm function is active only when `activate_sw_i` is in the active position. If the values of the set alarm time and the current time are equal, the alarm is triggered.
 
 ### `button_debouncer.vhd`
 Mechanical pushbutton often generate fake transitions when pressed due to its mechanical nature. If we want to set the time using pushbuttons, these fake transitions would be very problematic and it is necessary to get rid of them. Module called `button_debouncer` is used to do the job. It consists of 3 D-latches connected in series. The first one takes the push button signal as its input. When the enable signal is on high level, the input gest shifted to the next latch. The outputs of all three latches are connected to an AND gate which output is output of the whole debouncer. Clearly, when all three AND inputs are on HIGH level (i.e. the button is pressed for sufficient amount of time). button is pressed,  clock_enable module where g_MAX value is set to 1 000 000 for 10 ms debounce delay.
@@ -21,7 +14,7 @@ Mechanical pushbutton often generate fake transitions when pressed due to its me
 ### `clock_setter.vhd`
 Using this module, we set the time and choose whether it is the current time that we want to set or the time in which the alarm should be triggered. Apart from standard clock signal and enable signal, there are 2 buttons as inputs (using which we set the hours and minutes) and one switch with which we activate the module. The outputs of this block are the values of the hours and minutes we set.
 
-#### `cnt_up_down_2.vhd`
+### `cnt_up_down_2.vhd`
 Predesigned bidirectional counter from lab exercises.
 
 ### `hex_7seg.vhd`
